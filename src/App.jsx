@@ -1,14 +1,9 @@
 import React from "react";
 import CountryCapitalGame from "./components/CountryCapitalGame/CountryCapitalGame";
-
-const data = {
-	Germany: "Berlin",
-	Azerbaijan: "Baku",
-	NorthMacedonia: "Skopje",
-};
+import { countryCapitalData } from "./data/COMPONENT_DATA";
 
 const App = () => {
-	return <CountryCapitalGame data={data} />;
+	return <CountryCapitalGame data={countryCapitalData} />;
 };
 
 export default App;
