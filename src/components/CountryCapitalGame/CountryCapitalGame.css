@@ -1,0 +1,37 @@
+.page {
+	padding: 1em;
+	width: 100%;
+	min-height: 100vh;
+
+	display: grid;
+	place-items: center;
+}
+
+.container {
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1em;
+
+	flex-wrap: wrap;
+}
+
+.button {
+	width: calc(100% / 3 - 1em);
+
+	padding: 0.25em;
+	border: solid 2px black;
+	border-radius: 10px;
+	outline: none;
+
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.button.selected {
+	background-color: lightblue;
+}
