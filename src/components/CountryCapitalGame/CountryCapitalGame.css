@@ -1,8 +1,4 @@
-.page {
-	width: 100%;
-	min-height: 100vh;
-	padding: 1em;
-
+.page.countryCapitals {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -11,18 +7,7 @@
 	gap: 1em;
 }
 
-.title {
-	font-size: 2rem;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-.title.success {
-	color: green;
-}
-
-.container {
+.container.countryCapitals {
 	width: 100%;
 
 	display: grid;
@@ -31,6 +16,10 @@
 
 	grid-template-columns: repeat(auto-fit, minmax(calc((100% / 3) - 1em), 0.33fr));
 	grid-auto-rows: auto;
+	grid-gap: 1em;
+}
+
+.container.countryCapitals {
 	grid-gap: 1em;
 }
 
@@ -58,15 +47,7 @@
 }
 
 @media (max-width: 767px) {
-	.page {
-		padding: 0.5em;
-	}
-
-	.title {
-		font-size: 1.5rem;
-	}
-
-	.container {
+	.container.countryCapitals {
 		grid-template-columns: repeat(auto-fit, minmax(calc((100% / 2) - 1em), 0.5fr));
 	}
 

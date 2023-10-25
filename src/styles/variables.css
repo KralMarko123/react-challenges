@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+
+:root {
+	--main-dark: #2c302e;
+	--main-light: #ddd8c4;
+	--success: #8ed081;
+
+	--main-font: "Roboto", sans-serif;
+	--secondary-font: "Roboto Slab", serif;
+	--base-font-size: 18px;
+}

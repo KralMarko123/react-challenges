@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { whackAMoleData } from "../../data/COMPONENT_DATA";
-import "./WhackAMole.css";
+import { whacAMoleData } from "../../data/COMPONENT_DATA";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../constants/ROUTES";
+import "./WhacAMole.css";
 
-const WhackAMole = () => {
-	const [moles, setMoles] = useState(whackAMoleData);
+const WhacAMole = () => {
+	const navigate = useNavigate();
+	const [moles, setMoles] = useState(whacAMoleData);
 	const [score, setScore] = useState(0);
 
 	const toggleMole = (index, flag) => {
@@ -14,7 +17,10 @@ const WhackAMole = () => {
 	};
 
 	const handleMoleClick = (index) => {
-		if (!moles[index].isVisible) return;
+		if (!moles[index].isVisible) {
+			if (score > 0) setScore((prev) => prev - 1);
+			return;
+		}
 
 		setScore((prev) => prev + 1);
 		toggleMole(index, false);
@@ -25,16 +31,16 @@ const WhackAMole = () => {
 			const randomIndex = Math.floor(Math.random() * moles.length);
 
 			toggleMole(randomIndex, true);
-			setTimeout(() => toggleMole(randomIndex, false), 600);
-		}, 800);
+			setTimeout(() => toggleMole(randomIndex, false), 800 - score * 10);
+		}, 1000 - score * 10);
 
 		return () => clearInterval(interval);
 	}, [moles]);
 
 	return (
-		<div className="page">
+		<div className="page whacamole">
 			<h1 className="title"> Your score: {score}</h1>
-			<div className="container">
+			<div className="container whacamole">
 				{moles.map((m, i) => (
 					<div
 						key={i}
@@ -43,8 +49,11 @@ const WhackAMole = () => {
 					></div>
 				))}
 			</div>
+			<button className="back-button" onClick={() => navigate(ROUTES.HOME)}>
+				Back
+			</button>
 		</div>
 	);
 };
 
-export default WhackAMole;
+export default WhacAMole;

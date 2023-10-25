@@ -1,8 +1,11 @@
 import { React, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { shuffle } from "../../util/HELPER_FUNCTIONS";
 import "./CountryCapitalGame.css";
+import { ROUTES } from "../../constants/ROUTES";
 
 const CountryCapitalGame = ({ data }) => {
+	const navigate = useNavigate();
 	const [buttons, setButtons] = useState([]);
 	const [wrongPairSelected, setWrongPairSelected] = useState(false);
 
@@ -62,9 +65,9 @@ const CountryCapitalGame = ({ data }) => {
 	}, []);
 
 	return (
-		<div className="page">
+		<div className="page countryCapitals">
 			{buttons.length > 0 && <h1 className="title">Connect each country with its capital</h1>}
-			<div className="container">
+			<div className="container countryCapitals">
 				{buttons.length > 0 ? (
 					buttons.map((b) => (
 						<button
@@ -81,6 +84,9 @@ const CountryCapitalGame = ({ data }) => {
 					<p className="title success">Congratulations</p>
 				)}
 			</div>
+			<button className="back-button" onClick={() => navigate(ROUTES.HOME)}>
+				Back
+			</button>
 		</div>
 	);
 };

@@ -1,0 +1,57 @@
+.page {
+	width: 100%;
+	min-width: 100vw;
+	min-height: 100vh;
+
+	padding: 1em;
+	background-color: var(--main-dark);
+
+	font-family: var(--main-font);
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+
+	color: var(--main-light);
+}
+
+.success {
+	color: var(--success);
+}
+
+.back-button {
+	padding: 0.5em 2em;
+	background-color: var(--main-dark);
+	border: solid 2px var(--main-light);
+	border-radius: 10px;
+
+	color: var(--main-light);
+	font-size: 2rem;
+	font-family: var(--main-font);
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
+.back-button:hover {
+	background-color: var(--main-light);
+	color: var(--main-dark);
+}
+
+@media (max-width: 767px) {
+	.page {
+		padding: 0.5em;
+	}
+
+	.title {
+		font-size: 1.5rem;
+	}
+
+	.back-button {
+		padding: 0.25em 1em;
+		font-size: 1.5rem;
+	}
+}

@@ -4,7 +4,7 @@ export const countryCapitalData = {
 	NorthMacedonia: "Skopje",
 };
 
-export const whackAMoleData = [
+export const whacAMoleData = [
 	{ isVisible: false },
 	{ isVisible: false },
 	{ isVisible: false },
