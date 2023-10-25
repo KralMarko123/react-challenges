@@ -5,6 +5,7 @@ import WhacAMole from "./components/WhacAMole/WhacAMole";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ROUTES } from "./constants/ROUTES";
 import { countryCapitalData } from "./data/COMPONENT_DATA";
+import MemoryCardGame from "./components/MemoryCardGame/MemoryCardGame";
 
 const App = () => {
 	return (
@@ -16,6 +17,7 @@ const App = () => {
 					element={<CountryCapitalGame data={countryCapitalData} />}
 				/>
 				<Route path={ROUTES.WHACKAMOLE} element={<WhacAMole />} />
+				<Route path={ROUTES.MEMORYCARDS} element={<MemoryCardGame />} />
 			</Routes>
 		</BrowserRouter>
 	);
