@@ -3,3 +3,15 @@ export const countryCapitalData = {
 	Azerbaijan: "Baku",
 	NorthMacedonia: "Skopje",
 };
+
+export const whackAMoleData = [
+	{ isVisible: false },
+	{ isVisible: false },
+	{ isVisible: false },
+	{ isVisible: false },
+	{ isVisible: false },
+	{ isVisible: false },
+	{ isVisible: false },
+	{ isVisible: false },
+	{ isVisible: false },
+];

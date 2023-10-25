@@ -1,0 +1,63 @@
+.page {
+	width: 100%;
+	min-height: 100vh;
+	padding: 1em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 1em;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.container {
+	width: fit-content;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0;
+}
+
+.mole {
+	width: 300px;
+	height: 200px;
+	border: solid 1px black;
+
+	background-image: url("../../assets/images/mole_hidden.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	cursor: pointer;
+}
+
+.mole.shown {
+	background-image: url("../../assets/images/mole_shown.png");
+}
+
+.mole:hover {
+	opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+	.page {
+		padding: 0.5em;
+	}
+
+	.title {
+		font-size: 1.5rem;
+	}
+
+	.mole {
+		width: 100px;
+		height: 70px;
+	}
+}
