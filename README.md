@@ -2,6 +2,10 @@
 
 > A collection of different challenges written in React. Point of the repo is for the author to have a space to practice different skills/solutions explicitly in React
 
+## Link to the live site [here](https://kralmarko123.github.io/react-challenges)
+
+---
+
 ## Challenges & Descriptions:
 
 The following list contains a brief description of each challenge and what concept might have been used to make it work. Each title leads to the component corresponding to the challenge.
