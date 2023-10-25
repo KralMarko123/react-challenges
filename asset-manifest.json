@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-challenges/static/css/main.619a6f0e.css",
+    "main.js": "/react-challenges/static/js/main.db21cab5.js",
+    "static/media/mole_thumbnail.png": "/react-challenges/static/media/mole_thumbnail.bcd8c436e6ca5890876f.png",
+    "static/media/mole_hidden.png": "/react-challenges/static/media/mole_hidden.8999536da84b11b1d087.png",
+    "static/media/mole_shown.png": "/react-challenges/static/media/mole_shown.9d15e5bd09bbfbc6500b.png",
+    "static/media/countrycapital_thumbnail.png": "/react-challenges/static/media/countrycapital_thumbnail.7891cd89a5d39c15d0b8.png",
+    "index.html": "/react-challenges/index.html",
+    "main.619a6f0e.css.map": "/react-challenges/static/css/main.619a6f0e.css.map",
+    "main.db21cab5.js.map": "/react-challenges/static/js/main.db21cab5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.619a6f0e.css",
+    "static/js/main.db21cab5.js"
+  ]
+}
