@@ -19,18 +19,16 @@
 	grid-gap: 1em;
 }
 
-.container.countryCapitals {
-	grid-gap: 1em;
-}
-
 .button {
 	width: 100%;
-
 	padding: 1em 2em;
-	border: solid 2px black;
+
+	background-color: var(--main-light);
+	border: none;
 	border-radius: 10px;
 	outline: none;
 
+	color: var(--main-dark);
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	text-align: center;
@@ -39,20 +37,22 @@
 }
 
 .button.selected {
-	background-color: lightblue;
+	background-color: var(--accent);
 }
 
 .button.selected.incorrect {
-	background-color: red;
+	background-color: var(--danger);
 }
 
 @media (max-width: 767px) {
 	.container.countryCapitals {
 		grid-template-columns: repeat(auto-fit, minmax(calc((100% / 2) - 1em), 0.5fr));
+		gap: 0.5em;
 	}
 
 	.button {
 		padding: 0.5em;
 		font-size: 0.85rem;
+		border-radius: 5px;
 	}
 }
