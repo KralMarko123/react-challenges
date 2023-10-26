@@ -20,7 +20,7 @@
 	height: 200px;
 	border: solid 1px black;
 
-	background-image: url("../../assets/images/mole_hidden.png");
+	background-image: url("../../assets/images/whacamole/mole_hidden.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 }
 
 .mole.shown {
-	background-image: url("../../assets/images/mole_shown.png");
+	background-image: url("../../assets/images/whacamole/mole_shown.png");
 }
 
 .mole:hover {

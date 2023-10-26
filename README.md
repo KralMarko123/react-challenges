@@ -17,3 +17,7 @@ The following list contains a brief description of each challenge and what conce
 - ### [Whac-A-Mole Game](./src/components/WhacAMole/WhacAMole.jsx)
 
   - A whac-a-mole game. Each mole is rendered as a div which can be clicked. An interval is set in which the mole pops out and then hides. Clicking on it whilst it's shown increases your score and speeds up the moles. A basic example of useEffect paired with an interval/timeout function to have state change continuously.
+
+- ### [Memory Card Game](./src/components/MemoryCardGame/MemoryCardGame.jsx)
+
+  - A simple card game. Opened up cards are closed after a set timeout if they are not matching. Correctly guessed pairs remain face-up. An interval is set which decrements the timer and checks to see if the game has finished.

@@ -16,7 +16,7 @@ const App = () => {
 					path={ROUTES.COUNTRYCAPITAL}
 					element={<CountryCapitalGame data={countryCapitalData} />}
 				/>
-				<Route path={ROUTES.WHACKAMOLE} element={<WhacAMole />} />
+				<Route path={ROUTES.WHACAMOLE} element={<WhacAMole />} />
 				<Route path={ROUTES.MEMORYCARDS} element={<MemoryCardGame />} />
 			</Routes>
 		</BrowserRouter>

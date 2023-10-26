@@ -1,6 +1,6 @@
 export const ROUTES = {
 	HOME: "/",
-	COUNTRYCAPITAL: "countriesAndCapitals",
-	WHACKAMOLE: "/whackAMole",
-	MEMORYCARDS: "memoryCardGame",
+	COUNTRYCAPITAL: "/countriesAndCapitals",
+	WHACAMOLE: "/whacAMole",
+	MEMORYCARDS: "/memoryCardGame",
 };

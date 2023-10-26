@@ -1,104 +1,93 @@
 import React, { useEffect, useState } from "react";
-import { CARDS } from "../constants/URLs";
-import "../styles/MemoryCardGame.css";
+import { memoryCards } from "../../data/COMPONENT_DATA";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../constants/ROUTES";
+import "./MemoryCardGame.css";
 
 const MemoryCardGame = () => {
-	const [cards, setCards] = useState(CARDS);
-	const [cardsUpdated, setCardsUpdated] = useState(false);
+	const navigate = useNavigate();
+	const [cards, setCards] = useState(memoryCards);
 	const [remainingTime, setRemainingTime] = useState(60);
 	const [gameOver, setGameOver] = useState(false);
 
+	const getTitleText = () => {
+		if (!gameOver) return `${remainingTime} seconds left`;
+		else if (remainingTime === 0) return "Sorry, you can always come back & try again";
+		else return `Completed with ${remainingTime} seconds left`;
+	};
+
 	const handleCardClick = (position) => {
-		if (cards.every((card) => card.isCompleted) || remainingTime === 0) {
-			setGameOver(true);
-			return;
-		}
+		if (gameOver) return;
+		if (cards[position].isShown) return;
+		if (cards.filter((c) => c.isShown && !c.isCompleted).length > 1) return;
 
 		let updatedCards = cards;
 		let otherCardOpen = false;
-		let numberOfCardsOpen = 0;
 
-		updatedCards.forEach((card) => {
-			if (card.isShown && !card.isCompleted) numberOfCardsOpen++;
-		});
-
-		if (numberOfCardsOpen > 1) {
-			return;
-		}
+		updatedCards[position].isShown = true;
+		setCards([...updatedCards]);
 
 		otherCardOpen = updatedCards.find(
 			(c, i) => c.isShown === true && position !== i && c.isCompleted === false
 		);
 
-		if (!otherCardOpen) {
-			updatedCards[position].isShown = true;
-			setCards(updatedCards);
-			// setCardsUpdated(true);
-			return;
-		}
-
+		if (!otherCardOpen) return;
 		if (otherCardOpen.image !== updatedCards[position].image) {
-			updatedCards[position].isShown = true;
-			setCards(updatedCards);
-			// setCardsUpdated(true);
-
 			setTimeout(() => {
 				updatedCards[position].isShown = false;
 				otherCardOpen.isShown = false;
-
-				setCards(updatedCards);
-				// setCardsUpdated(true);
+				setCards([...updatedCards]);
 			}, 1000);
 		} else {
-			updatedCards[position].isShown = true;
 			updatedCards[position].isCompleted = true;
 			otherCardOpen.isCompleted = true;
-
-			setCards(updatedCards);
-			// setCardsUpdated(true);
+			setCards([...updatedCards]);
 		}
-	};
 
-	// useEffect(() => {
-	// 	if (cardsUpdated) {
-	// 		setCardsUpdated(false);
-	// 	}
-	// }, [cards, cardsUpdated]);
+		if (updatedCards.every((c) => c.isCompleted)) setGameOver(true);
+	};
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			if (!gameOver) setRemainingTime((prev) => prev - 1);
+			if (gameOver) return;
+
+			if (remainingTime === 0) {
+				setGameOver(true);
+			} else setRemainingTime((prev) => prev - 1);
 		}, 1000);
 
 		return () => clearInterval(interval);
 	}, [remainingTime]);
 
 	return (
-		<>
-			<div className="timer">
-				{cards.every((card) => card.isCompleted) && `Completed with ${remainingTime} seconds left.`}
-				{remainingTime === 0 && "Sorry, you can always try again"}
-			</div>
+		<div className="page memorycard">
+			<h1 className="title">{getTitleText()}</h1>
 
-			<div className="memory-grid">
+			<div className="card-grid">
 				{cards.map((c, i) => {
 					return (
 						<div
 							key={i}
-							className={`card ${c.isShown ? "shown" : ""} ${c.isCompleted ? "completed" : ""}`}
+							className={`memory-card ${c.isShown ? "visible" : ""} ${
+								c.isCompleted ? "completed" : ""
+							}`}
 							onClick={() => handleCardClick(i)}
 						>
 							<div className="card-inner">
 								<div className="card-front"></div>
 								<div className="card-back">
-									<img className="card-image" src={`${c.image}`} alt="memory-card__image" />
+									<img className="card-cover" src={`${c.image}`} alt="memory-card__cover" />
 								</div>
 							</div>
 						</div>
 					);
 				})}
 			</div>
-		</>
+
+			<button className="back-button" onClick={() => navigate(ROUTES.HOME)}>
+				Back
+			</button>
+		</div>
 	);
 };
 
