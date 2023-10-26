@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-challenges/static/css/main.d0c0924b.css",
-    "main.js": "/react-challenges/static/js/main.9634fb38.js",
+    "main.css": "/react-challenges/static/css/main.1b41520a.css",
+    "main.js": "/react-challenges/static/js/main.7e937fc1.js",
     "static/media/dadi.jpg": "/react-challenges/static/media/dadi.18abfd7f8992275c6ccc.jpg",
     "static/media/luka.png": "/react-challenges/static/media/luka.d0851390e42e2f232f96.png",
     "static/media/marko.jpg": "/react-challenges/static/media/marko.e8282a02ba71a6e54aff.jpg",
@@ -18,11 +18,11 @@
     "static/media/mole_shown.png": "/react-challenges/static/media/mole_shown.9d15e5bd09bbfbc6500b.png",
     "static/media/countrycapital_thumbnail.png": "/react-challenges/static/media/countrycapital_thumbnail.7891cd89a5d39c15d0b8.png",
     "index.html": "/react-challenges/index.html",
-    "main.d0c0924b.css.map": "/react-challenges/static/css/main.d0c0924b.css.map",
-    "main.9634fb38.js.map": "/react-challenges/static/js/main.9634fb38.js.map"
+    "main.1b41520a.css.map": "/react-challenges/static/css/main.1b41520a.css.map",
+    "main.7e937fc1.js.map": "/react-challenges/static/js/main.7e937fc1.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0c0924b.css",
-    "static/js/main.9634fb38.js"
+    "static/css/main.1b41520a.css",
+    "static/js/main.7e937fc1.js"
   ]
 }
