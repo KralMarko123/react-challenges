@@ -1,17 +1,28 @@
 {
   "files": {
-    "main.css": "/react-challenges/static/css/main.3cc6a42b.css",
-    "main.js": "/react-challenges/static/js/main.db21cab5.js",
+    "main.css": "/react-challenges/static/css/main.d0c0924b.css",
+    "main.js": "/react-challenges/static/js/main.9634fb38.js",
+    "static/media/dadi.jpg": "/react-challenges/static/media/dadi.18abfd7f8992275c6ccc.jpg",
+    "static/media/luka.png": "/react-challenges/static/media/luka.d0851390e42e2f232f96.png",
+    "static/media/marko.jpg": "/react-challenges/static/media/marko.e8282a02ba71a6e54aff.jpg",
+    "static/media/mance.jpg": "/react-challenges/static/media/mance.e88f1eb1e0de987970cf.jpg",
+    "static/media/bojan.jpg": "/react-challenges/static/media/bojan.1d9f59fe4ccb075c3317.jpg",
+    "static/media/dame.jpg": "/react-challenges/static/media/dame.4a616445c45c1234d562.jpg",
+    "static/media/andrej.jpg": "/react-challenges/static/media/andrej.833a9234fb6fca418cc8.jpg",
+    "static/media/bube.jpg": "/react-challenges/static/media/bube.f378005e7b33dad6552a.jpg",
+    "static/media/jovan.jpg": "/react-challenges/static/media/jovan.6abca7ce0b5ff27f5078.jpg",
+    "static/media/memory cards thumbnail.png": "/react-challenges/static/media/memory cards thumbnail.e75299681da1f3b1f7b5.png",
     "static/media/mole_thumbnail.png": "/react-challenges/static/media/mole_thumbnail.bcd8c436e6ca5890876f.png",
+    "static/media/petar.jpg": "/react-challenges/static/media/petar.ae7cbeb51d3e84c27366.jpg",
     "static/media/mole_hidden.png": "/react-challenges/static/media/mole_hidden.8999536da84b11b1d087.png",
     "static/media/mole_shown.png": "/react-challenges/static/media/mole_shown.9d15e5bd09bbfbc6500b.png",
     "static/media/countrycapital_thumbnail.png": "/react-challenges/static/media/countrycapital_thumbnail.7891cd89a5d39c15d0b8.png",
     "index.html": "/react-challenges/index.html",
-    "main.3cc6a42b.css.map": "/react-challenges/static/css/main.3cc6a42b.css.map",
-    "main.db21cab5.js.map": "/react-challenges/static/js/main.db21cab5.js.map"
+    "main.d0c0924b.css.map": "/react-challenges/static/css/main.d0c0924b.css.map",
+    "main.9634fb38.js.map": "/react-challenges/static/js/main.9634fb38.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cc6a42b.css",
-    "static/js/main.db21cab5.js"
+    "static/css/main.d0c0924b.css",
+    "static/js/main.9634fb38.js"
   ]
 }
