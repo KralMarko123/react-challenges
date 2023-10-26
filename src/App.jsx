@@ -4,8 +4,9 @@ import Home from "./components/Home/Home";
 import WhacAMole from "./components/WhacAMole/WhacAMole";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ROUTES } from "./constants/ROUTES";
-import { countryCapitalData } from "./data/COMPONENT_DATA";
+import { countryCapitalData, fileViewerData } from "./data/COMPONENT_DATA";
 import MemoryCardGame from "./components/MemoryCardGame/MemoryCardGame";
+import FileViewer from "./components/FileViewer/FileViewer";
 
 const App = () => {
 	return (
@@ -18,6 +19,7 @@ const App = () => {
 				/>
 				<Route path={ROUTES.WHACAMOLE} element={<WhacAMole />} />
 				<Route path={ROUTES.MEMORYCARDS} element={<MemoryCardGame />} />
+				<Route path={ROUTES.FILEVIEWER} element={<FileViewer files={fileViewerData} />} />
 			</Routes>
 		</BrowserRouter>
 	);

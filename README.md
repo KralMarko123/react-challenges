@@ -21,3 +21,7 @@ The following list contains a brief description of each challenge and what conce
 - ### [Memory Card Game](./src/components/MemoryCardGame/MemoryCardGame.jsx)
 
   - A simple card game. Opened up cards are closed after a set timeout if they are not matching. Correctly guessed pairs remain face-up. An interval is set which decrements the timer and checks to see if the game has finished.
+
+- ### [File Viewer](./src/components/FileViewer/FileViewer.jsx)
+
+  - A simple tree-like component calling itself recursively depending on whether there are children element to render. Its look is supposed to mimic the view of a file explorer in any modern IDE. Conditional statements and a supporting baseline is used to have each component rendered appropriately.

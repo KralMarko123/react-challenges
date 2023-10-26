@@ -1,0 +1,38 @@
+.page.fileviewer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 1em;
+}
+
+.file-window {
+	border: solid 2px var(--main-light);
+	padding: 2em;
+	border-radius: 10px;
+}
+
+.file {
+	margin: 0.5em 0;
+	color: var(--main-light);
+}
+
+.filename {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.filename:hover {
+	opacity: 0.85;
+}
+
+@media (max-width: 767px) {
+	.file-window {
+		padding: 1em;
+	}
+
+	.filename {
+		font-size: 1.25rem;
+	}
+}

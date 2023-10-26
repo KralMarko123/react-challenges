@@ -1,6 +1,7 @@
 import moleThumbnail from "../assets/images/whacamole/mole_thumbnail.png";
 import countryCapitalThumbnail from "../assets/images/countryCapitals/countrycapital_thumbnail.png";
 import memoryCardsThumbnail from "../assets/images/memoryCards/memory cards thumbnail.png";
+import fileViewerThumbnail from "../assets/images/fileViewer/file viewer thumbnail.png";
 import { ROUTES } from "./ROUTES";
 
 export const CHALLENGES = [
@@ -26,5 +27,12 @@ export const CHALLENGES = [
 		thumbnail: memoryCardsThumbnail,
 		thumbnailAlt: "memory-cards",
 		route: ROUTES.MEMORYCARDS,
+	},
+	{
+		title: "File Viewer",
+		description: "A simple tree-like component mimicking the file explorer in any modern IDE",
+		thumbnail: fileViewerThumbnail,
+		thumbnailAlt: "file-viewer",
+		route: ROUTES.FILEVIEWER,
 	},
 ];

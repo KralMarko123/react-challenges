@@ -3,4 +3,5 @@ export const ROUTES = {
 	COUNTRYCAPITAL: "/countriesAndCapitals",
 	WHACAMOLE: "/whacAMole",
 	MEMORYCARDS: "/memoryCardGame",
+	FILEVIEWER: "/fileViewer",
 };

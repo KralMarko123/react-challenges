@@ -64,3 +64,38 @@ export const memoryCards = randomizedImages.map((image) => {
 		isCompleted: false,
 	};
 });
+
+export const fileViewerData = [
+	{
+		name: "build",
+		children: [
+			{
+				name: "static",
+				children: [
+					{
+						name: "css",
+					},
+					{
+						name: "js",
+					},
+					{ name: "media" },
+				],
+			},
+		],
+	},
+	{
+		name: "public",
+		children: [
+			{
+				name: "index.html",
+			},
+		],
+	},
+	{
+		name: "src",
+		children: [{ name: "App.jsx" }, { name: "index.js" }],
+	},
+	{ name: ".gitignore" },
+	{ name: "package.json" },
+	{ name: "README.md" },
+];
