@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { queueData } from "../../data/COMPONENT_DATA";
-import "./QueueProblem.css";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../constants/ROUTES";
+import "./QueueCounters.css";
 
-const QueueProblem = () => {
+const QueueCounters = () => {
 	const [queues, setQueues] = useState(queueData);
 	const inputRef = useRef();
+	const navigate = useNavigate();
 
 	const handleCheckout = () => {
 		// check input
@@ -35,7 +38,8 @@ const QueueProblem = () => {
 			let updatedQueues = queues;
 
 			updatedQueues.forEach((q) => {
-				if (q[0] - 1 === 0) q.shift();
+				if (q.length === 0) return;
+				else if (q[0] - 1 === 0) q.shift();
 				else q[0]--;
 			});
 
@@ -78,8 +82,12 @@ const QueueProblem = () => {
 					</div>
 				))}
 			</div>
+
+			<button className="back-button" onClick={() => navigate(ROUTES.HOME)}>
+				Back
+			</button>
 		</div>
 	);
 };
 
-export default QueueProblem;
+export default QueueCounters;

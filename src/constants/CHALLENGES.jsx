@@ -1,7 +1,8 @@
-import moleThumbnail from "../assets/images/whacamole/mole_thumbnail.png";
-import countryCapitalThumbnail from "../assets/images/countryCapitals/countrycapital_thumbnail.png";
+import moleThumbnail from "../assets/images/whacamole/mole thumbnail.png";
+import countryCapitalThumbnail from "../assets/images/countryCapitals/countrycapital thumbnail.png";
 import memoryCardsThumbnail from "../assets/images/memoryCards/memory cards thumbnail.png";
 import fileViewerThumbnail from "../assets/images/fileViewer/file viewer thumbnail.png";
+import queueCountersThumbnail from "../assets/images/queueCounters/queue counters thumbnail.png";
 import { ROUTES } from "./ROUTES";
 
 export const CHALLENGES = [
@@ -34,5 +35,13 @@ export const CHALLENGES = [
 		thumbnail: fileViewerThumbnail,
 		thumbnailAlt: "file-viewer",
 		route: ROUTES.FILEVIEWER,
+	},
+	{
+		title: "Queue Counters",
+		description:
+			"Visualization of multiple queues in a store. Each second the first in queue has his items removed until the next customer comes up with their items.",
+		thumbnail: queueCountersThumbnail,
+		thumbnailAlt: "queue-counters",
+		route: ROUTES.QUEUECOUNTERS,
 	},
 ];
