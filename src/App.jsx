@@ -7,6 +7,7 @@ import { ROUTES } from "./constants/ROUTES";
 import { countryCapitalData, fileViewerData } from "./data/COMPONENT_DATA";
 import MemoryCardGame from "./components/MemoryCardGame/MemoryCardGame";
 import FileViewer from "./components/FileViewer/FileViewer";
+import QueueProblem from "./components/QueueProblem/QueueProblem";
 
 const App = () => {
 	return (
@@ -20,6 +21,7 @@ const App = () => {
 				<Route path={ROUTES.WHACAMOLE} element={<WhacAMole />} />
 				<Route path={ROUTES.MEMORYCARDS} element={<MemoryCardGame />} />
 				<Route path={ROUTES.FILEVIEWER} element={<FileViewer files={fileViewerData} />} />
+				<Route path={ROUTES.QUEUEPROBLEM} element={<QueueProblem />} />
 			</Routes>
 		</BrowserRouter>
 	);

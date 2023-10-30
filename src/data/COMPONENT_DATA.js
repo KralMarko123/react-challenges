@@ -99,3 +99,5 @@ export const fileViewerData = [
 	{ name: "package.json" },
 	{ name: "README.md" },
 ];
+
+export const queueData = [[5, 3], [5, 5, 2, 1], [10], [9, 10, 5, 9], [1, 2, 3, 4, 5]];

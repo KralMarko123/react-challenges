@@ -4,4 +4,5 @@ export const ROUTES = {
 	WHACAMOLE: "/whacAMole",
 	MEMORYCARDS: "/memoryCardGame",
 	FILEVIEWER: "/fileViewer",
+	QUEUEPROBLEM: "/queueProblem",
 };
