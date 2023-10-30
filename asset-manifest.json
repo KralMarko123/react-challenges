@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-challenges/static/css/main.1b41520a.css",
-    "main.js": "/react-challenges/static/js/main.7e937fc1.js",
+    "main.css": "/react-challenges/static/css/main.b7cd17b6.css",
+    "main.js": "/react-challenges/static/js/main.b9f9f9f3.js",
     "static/media/dadi.jpg": "/react-challenges/static/media/dadi.18abfd7f8992275c6ccc.jpg",
     "static/media/luka.png": "/react-challenges/static/media/luka.d0851390e42e2f232f96.png",
     "static/media/marko.jpg": "/react-challenges/static/media/marko.e8282a02ba71a6e54aff.jpg",
@@ -12,17 +12,18 @@
     "static/media/bube.jpg": "/react-challenges/static/media/bube.f378005e7b33dad6552a.jpg",
     "static/media/jovan.jpg": "/react-challenges/static/media/jovan.6abca7ce0b5ff27f5078.jpg",
     "static/media/memory cards thumbnail.png": "/react-challenges/static/media/memory cards thumbnail.e75299681da1f3b1f7b5.png",
-    "static/media/mole_thumbnail.png": "/react-challenges/static/media/mole_thumbnail.bcd8c436e6ca5890876f.png",
+    "static/media/mole thumbnail.png": "/react-challenges/static/media/mole thumbnail.bcd8c436e6ca5890876f.png",
     "static/media/petar.jpg": "/react-challenges/static/media/petar.ae7cbeb51d3e84c27366.jpg",
+    "static/media/queue counters thumbnail.png": "/react-challenges/static/media/queue counters thumbnail.13df19276c657f43d781.png",
     "static/media/mole_hidden.png": "/react-challenges/static/media/mole_hidden.8999536da84b11b1d087.png",
     "static/media/mole_shown.png": "/react-challenges/static/media/mole_shown.9d15e5bd09bbfbc6500b.png",
-    "static/media/countrycapital_thumbnail.png": "/react-challenges/static/media/countrycapital_thumbnail.7891cd89a5d39c15d0b8.png",
+    "static/media/countrycapital thumbnail.png": "/react-challenges/static/media/countrycapital thumbnail.7891cd89a5d39c15d0b8.png",
     "index.html": "/react-challenges/index.html",
-    "main.1b41520a.css.map": "/react-challenges/static/css/main.1b41520a.css.map",
-    "main.7e937fc1.js.map": "/react-challenges/static/js/main.7e937fc1.js.map"
+    "main.b7cd17b6.css.map": "/react-challenges/static/css/main.b7cd17b6.css.map",
+    "main.b9f9f9f3.js.map": "/react-challenges/static/js/main.b9f9f9f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b41520a.css",
-    "static/js/main.7e937fc1.js"
+    "static/css/main.b7cd17b6.css",
+    "static/js/main.b9f9f9f3.js"
   ]
 }
