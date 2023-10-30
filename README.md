@@ -25,3 +25,7 @@ The following list contains a brief description of each challenge and what conce
 - ### [File Viewer](./src/components/FileViewer/FileViewer.jsx)
 
   - A simple tree-like component calling itself recursively depending on whether there are children element to render. Its look is supposed to mimic the view of a file explorer in any modern IDE. Conditional statements and a supporting baseline is used to have each component rendered appropriately.
+
+- ### [Queue Counters](./src/components/QueueCounters/QueueCounters.jsx)
+
+  - Visualization of multiple queues in a store. Each second the first in queue has his items removed until the next customer comes up with their items. A simple challenge with some array manipulation. 
