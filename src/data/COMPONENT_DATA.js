@@ -15,7 +15,7 @@ import { shuffle } from "../util/HELPER_FUNCTIONS";
 export const countryCapitalData = {
 	Germany: "Berlin",
 	Azerbaijan: "Baku",
-	NorthMacedonia: "Skopje",
+	Macedonia: "Skopje",
 };
 
 export const whacAMoleData = [
