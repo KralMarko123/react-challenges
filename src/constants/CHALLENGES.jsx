@@ -3,6 +3,7 @@ import countryCapitalThumbnail from "../assets/images/countryCapitals/countrycap
 import memoryCardsThumbnail from "../assets/images/memoryCards/memory cards thumbnail.png";
 import fileViewerThumbnail from "../assets/images/fileViewer/file viewer thumbnail.png";
 import queueCountersThumbnail from "../assets/images/queueCounters/queue counters thumbnail.png";
+import synonymFinderThumbnail from "../assets/images/synonymFinder/synonym finder thumbnail.png";
 import { ROUTES } from "./ROUTES";
 
 export const CHALLENGES = [
@@ -43,5 +44,13 @@ export const CHALLENGES = [
 		thumbnail: queueCountersThumbnail,
 		thumbnailAlt: "queue-counters",
 		route: ROUTES.QUEUECOUNTERS,
+	},
+	{
+		title: "Synonym Finder",
+		description:
+			"A component which returns synonyms for a typed word or phrase. Each synonym can then be clicked to find other ones as well. The results are fetched from an external source and the top five are displayed.",
+		thumbnail: synonymFinderThumbnail,
+		thumbnailAlt: "synonym-finder",
+		route: ROUTES.SYNONYMFINDER,
 	},
 ];

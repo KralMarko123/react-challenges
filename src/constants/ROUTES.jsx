@@ -5,4 +5,5 @@ export const ROUTES = {
 	MEMORYCARDS: "/memoryCardGame",
 	FILEVIEWER: "/fileViewer",
 	QUEUECOUNTERS: "/queueCounters",
+	SYNONYMFINDER: "/synonymFinder",
 };

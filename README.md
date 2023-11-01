@@ -28,4 +28,8 @@ The following list contains a brief description of each challenge and what conce
 
 - ### [Queue Counters](./src/components/QueueCounters/QueueCounters.jsx)
 
-  - Visualization of multiple queues in a store. Each second the first in queue has his items removed until the next customer comes up with their items. A simple challenge with some array manipulation. 
+  - Visualization of multiple queues in a store. Each second the first in queue has his items removed until the next customer comes up with their items. A simple challenge with some array manipulation.
+
+- ### [Synonym Finder](./src/components/SynonymFinder/SynonymFinder.jsx)
+
+  - A component which returns synonyms for a typed word or phrase. Each synonym can then be clicked to find other ones as well. The results are fetched from an external API using 'fetch' and the top five are displayed. The logic is extracted into a custom hook located in the same directory [here](./src/components/SynonymFinder/useGetSynonyms.jsx).

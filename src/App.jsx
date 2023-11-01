@@ -8,6 +8,7 @@ import { countryCapitalData, fileViewerData } from "./data/COMPONENT_DATA";
 import MemoryCardGame from "./components/MemoryCardGame/MemoryCardGame";
 import FileViewer from "./components/FileViewer/FileViewer";
 import QueueCounters from "./components/QueueCounters/QueueCounters";
+import SynonymFinder from "./components/SynonymFinder/SynonymFinder";
 
 const App = () => {
 	return (
@@ -22,6 +23,7 @@ const App = () => {
 				<Route path={ROUTES.MEMORYCARDS} element={<MemoryCardGame />} />
 				<Route path={ROUTES.FILEVIEWER} element={<FileViewer files={fileViewerData} />} />
 				<Route path={ROUTES.QUEUECOUNTERS} element={<QueueCounters />} />
+				<Route path={ROUTES.SYNONYMFINDER} element={<SynonymFinder />} />
 			</Routes>
 		</BrowserRouter>
 	);

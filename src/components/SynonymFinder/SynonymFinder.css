@@ -1,0 +1,120 @@
+.page.synonymfinder {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 3em;
+}
+
+.input-container {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.word-input,
+.word-button {
+	padding: 1em;
+
+	background-color: transparent;
+	border: solid 3px var(--main-light);
+	border-radius: 5px;
+	outline: none;
+
+	color: var(--main-light);
+	font-size: 1.25rem;
+	font-family: var(--main-font);
+	text-align: center;
+}
+
+.word-button {
+	cursor: pointer;
+}
+
+.word-button:hover {
+	background-color: var(--main-light);
+	color: var(--main-dark);
+}
+
+.synonym-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+.synonym-title {
+	font-size: 2rem;
+	color: var(--main-light);
+}
+
+.synonym-loader {
+	color: var(--main-light);
+	font-family: var(--secondary-font);
+	font-size: 2rem;
+	letter-spacing: 2px;
+	text-transform: lowercase;
+}
+
+.synonym {
+	padding: 1em;
+
+	background-color: var(--accent);
+	border-radius: 5px;
+
+	color: var(--main-light);
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	cursor: pointer;
+}
+
+.synonym:hover {
+	opacity: 0.85;
+}
+
+@media (max-width: 1280px) {
+	.synonym-title {
+		font-size: 1.5rem;
+	}
+
+	.synonym-loader {
+		font-size: 1.5rem;
+		letter-spacing: 1px;
+	}
+	.synonym {
+		padding: 0.5em;
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.input-container {
+		gap: 0.5em;
+	}
+
+	.word-input,
+	.word-button {
+		padding: 0.5em;
+		font-size: 1rem;
+	}
+
+	.synonym-container {
+		flex-direction: column;
+	}
+	.synonym-title {
+		font-size: 1.25rem;
+	}
+
+	.synonym-loader {
+		font-size: 1.25rem;
+	}
+	.synonym {
+		width: 100%;
+		font-size: 1rem;
+		text-align: center;
+	}
+}

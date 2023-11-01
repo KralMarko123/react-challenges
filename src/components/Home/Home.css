@@ -99,7 +99,7 @@
 	transition: all 0.25s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.subtitle {
 		font-size: 0.85rem;
 		text-align: justify;
@@ -108,13 +108,13 @@
 
 	.card-container {
 		width: 100%;
-		grid-template-columns: repeat(3, 1fr);
-		gap: .5em;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.5em;
 	}
 
 	.card {
-		height: 150px;
-		padding: 0.25em;
+		height: 200px;
+		padding: 0.125em;
 	}
 
 	.card-image {
@@ -127,8 +127,9 @@
 	}
 
 	.card-description {
-		width: 100%;
-
-		font-size: 0.85rem;
+		width: 90%;
+		height: auto;
+		font-size: 0.65rem;
+		text-align: justify;
 	}
 }
