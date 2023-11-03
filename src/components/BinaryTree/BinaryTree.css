@@ -1,0 +1,28 @@
+.page.binarytree {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	gap: 1em;
+}
+
+.node-container {
+	position: relative;
+}
+
+.node-value {
+	position: absolute;
+
+	width: 20px;
+	height: 20px;
+	padding: 1em;
+	border-radius: 50%;
+	border: solid 2px var(--main-light);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: var(--main-light);
+}

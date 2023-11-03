@@ -101,3 +101,41 @@ export const fileViewerData = [
 ];
 
 export const queueData = [[5, 3], [5, 5, 2, 1], [10], [9, 10, 5, 9], [1, 2, 3, 4, 5]];
+
+export const binaryTreeData = {
+	value: 5,
+	left: {
+		value: 6,
+		left: {
+			value: 3,
+			left: { value: 10 },
+			right: { value: 100 },
+		},
+		right: {
+			value: 4,
+			left: {
+				value: 99,
+				left: {
+					value: 12,
+				},
+				right: { value: 24 },
+			},
+		},
+	},
+	right: {
+		value: 2,
+		left: {
+			value: 12,
+			left: { value: 10 },
+		},
+		right: {
+			value: 4,
+			left: {
+				value: 5,
+			},
+			right: {
+				value: 26,
+			},
+		},
+	},
+};

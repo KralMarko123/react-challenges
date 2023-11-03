@@ -1,15 +1,16 @@
 import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ROUTES } from "./constants/ROUTES";
 import CountryCapitalGame from "./components/CountryCapitalGame/CountryCapitalGame";
 import Home from "./components/Home/Home";
 import WhacAMole from "./components/WhacAMole/WhacAMole";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { ROUTES } from "./constants/ROUTES";
-import { countryCapitalData, fileViewerData } from "./data/COMPONENT_DATA";
+import { binaryTreeData, countryCapitalData, fileViewerData } from "./data/COMPONENT_DATA";
 import MemoryCardGame from "./components/MemoryCardGame/MemoryCardGame";
 import FileViewer from "./components/FileViewer/FileViewer";
 import QueueCounters from "./components/QueueCounters/QueueCounters";
 import SynonymFinder from "./components/SynonymFinder/SynonymFinder";
 import DotCreator from "./components/DotCreator/DotCreator";
+import BinaryTree from "./components/BinaryTree/BinaryTree";
 
 const App = () => {
 	return (
@@ -26,6 +27,7 @@ const App = () => {
 				<Route path={ROUTES.QUEUECOUNTERS} element={<QueueCounters />} />
 				<Route path={ROUTES.SYNONYMFINDER} element={<SynonymFinder />} />
 				<Route path={ROUTES.DOTCREATOR} element={<DotCreator />} />
+				<Route path={ROUTES.BINARYtREE} element={<BinaryTree root={binaryTreeData} />} />
 			</Routes>
 		</BrowserRouter>
 	);

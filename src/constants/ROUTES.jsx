@@ -7,4 +7,5 @@ export const ROUTES = {
 	QUEUECOUNTERS: "/queueCounters",
 	SYNONYMFINDER: "/synonymFinder",
 	DOTCREATOR: "/dotCreator",
+	BINARYtREE: "/binaryTree",
 };
