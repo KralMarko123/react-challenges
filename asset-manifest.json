@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-challenges/static/css/main.7abdb094.css",
-    "main.js": "/react-challenges/static/js/main.134736dc.js",
+    "main.css": "/react-challenges/static/css/main.321b6c33.css",
+    "main.js": "/react-challenges/static/js/main.190f00cc.js",
     "static/media/dadi.jpg": "/react-challenges/static/media/dadi.18abfd7f8992275c6ccc.jpg",
     "static/media/luka.png": "/react-challenges/static/media/luka.d0851390e42e2f232f96.png",
     "static/media/marko.jpg": "/react-challenges/static/media/marko.e8282a02ba71a6e54aff.jpg",
@@ -18,13 +18,14 @@
     "static/media/mole_hidden.png": "/react-challenges/static/media/mole_hidden.8999536da84b11b1d087.png",
     "static/media/mole_shown.png": "/react-challenges/static/media/mole_shown.9d15e5bd09bbfbc6500b.png",
     "static/media/synonym finder thumbnail.png": "/react-challenges/static/media/synonym finder thumbnail.35d9810b45a1c392df92.png",
+    "static/media/dot creator thumbnail.png": "/react-challenges/static/media/dot creator thumbnail.605847f4b52e35494b1f.png",
     "static/media/countrycapital thumbnail.png": "/react-challenges/static/media/countrycapital thumbnail.7891cd89a5d39c15d0b8.png",
     "index.html": "/react-challenges/index.html",
-    "main.7abdb094.css.map": "/react-challenges/static/css/main.7abdb094.css.map",
-    "main.134736dc.js.map": "/react-challenges/static/js/main.134736dc.js.map"
+    "main.321b6c33.css.map": "/react-challenges/static/css/main.321b6c33.css.map",
+    "main.190f00cc.js.map": "/react-challenges/static/js/main.190f00cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.7abdb094.css",
-    "static/js/main.134736dc.js"
+    "static/css/main.321b6c33.css",
+    "static/js/main.190f00cc.js"
   ]
 }
