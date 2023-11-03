@@ -33,3 +33,7 @@ The following list contains a brief description of each challenge and what conce
 - ### [Synonym Finder](./src/components/SynonymFinder/SynonymFinder.jsx)
 
   - A component which returns synonyms for a typed word or phrase. Each synonym can then be clicked to find other ones as well. The results are fetched from an external API using 'fetch' and the top five are displayed. The logic is extracted into a custom hook located in the same directory [here](./src/components/SynonymFinder/useGetSynonyms.jsx).
+
+- ### [Dot Creator](./src/components/DotCreator/DotCreator.jsx)
+
+  - A drawing board in which users can draw out circles depending on their click. Each dot is given a random color and its coordinates are calculated according to the cursor's position. The Undo/Redo actions are possible due to constant array manipulation and tracking.

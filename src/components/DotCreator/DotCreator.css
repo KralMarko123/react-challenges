@@ -1,0 +1,56 @@
+.page.dotcreator {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.dot-controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	gap: 1em;
+}
+
+.dot-control {
+	padding: 0.5em;
+
+	border: none;
+	outline: none;
+	background-color: var(--accent);
+	border-radius: 5px;
+
+	color: var(--main-light);
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	cursor: pointer;
+
+	pointer-events: visiblePainted;
+	z-index: 2;
+}
+
+.dot-control.disabled {
+	opacity: 0.5;
+}
+
+.dot-control:hover {
+	opacity: 0.85;
+}
+
+.dot-control.disabled:hover {
+	opacity: 0.5;
+}
+
+.dot-container {
+	width: 100%;
+	min-height: 60vh;
+	border: solid 2px var(--main-light);
+}
+
+.dot {
+	position: absolute;
+	border-radius: 50%;
+}

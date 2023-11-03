@@ -6,3 +6,5 @@ export const shuffle = (array) => {
 	}
 	return array;
 };
+
+export const getRandomItemFromArray = (array) => array[Math.floor(Math.random() * array.length)];

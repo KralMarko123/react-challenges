@@ -4,6 +4,7 @@ import memoryCardsThumbnail from "../assets/images/memoryCards/memory cards thum
 import fileViewerThumbnail from "../assets/images/fileViewer/file viewer thumbnail.png";
 import queueCountersThumbnail from "../assets/images/queueCounters/queue counters thumbnail.png";
 import synonymFinderThumbnail from "../assets/images/synonymFinder/synonym finder thumbnail.png";
+import dotCreatorThumbnail from "../assets/images/dotCreator/dot creator thumbnail.png";
 import { ROUTES } from "./ROUTES";
 
 export const CHALLENGES = [
@@ -52,5 +53,13 @@ export const CHALLENGES = [
 		thumbnail: synonymFinderThumbnail,
 		thumbnailAlt: "synonym-finder",
 		route: ROUTES.SYNONYMFINDER,
+	},
+	{
+		title: "Dot Creator",
+		description:
+			"A drawing board in which users can draw out circles depending on their click. Each dot is given a random color and its coordinates are calculated according to the cursor's position.",
+		thumbnail: dotCreatorThumbnail,
+		thumbnailAlt: "dot-creator",
+		route: ROUTES.DOTCREATOR,
 	},
 ];

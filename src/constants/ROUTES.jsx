@@ -6,4 +6,5 @@ export const ROUTES = {
 	FILEVIEWER: "/fileViewer",
 	QUEUECOUNTERS: "/queueCounters",
 	SYNONYMFINDER: "/synonymFinder",
+	DOTCREATOR: "/dotCreator",
 };
