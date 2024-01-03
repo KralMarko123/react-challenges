@@ -1,42 +1,35 @@
-import React from "react";
-import "./BinaryTree.css";
+import React from 'react';
+import './BinaryTree.css';
 
-const BinaryNode = ({ node, depth, left, right }) => {
-	const NODE_SPACING = 60;
+const BinaryNode = ({ node, depth, left, right, offset }) => {
+	const ROW_SPACING = 50;
+	const NODE_SPACING = 5;
+
+	if (left) offset -= NODE_SPACING;
+	else if (right) offset += NODE_SPACING;
 
 	return (
-		<div className="node-container">
+		<>
 			<span
-				className="node-value"
-				style={{ top: `${depth * NODE_SPACING}px`, left: `${left}px`, right: `${right}px` }}
+				className='node-value'
+				style={{
+					top: `${depth * ROW_SPACING}px`,
+					left: `calc(${offset}%)`
+				}}
 			>
 				{node.value}
 			</span>
 
-			{node.left && (
-				<BinaryNode
-					node={node.left}
-					depth={depth + 1}
-					left={(depth + 1) * -NODE_SPACING}
-					right={(depth + 1) * NODE_SPACING}
-				/>
-			)}
-			{node.right && (
-				<BinaryNode
-					node={node.right}
-					depth={depth + 1}
-					right={(depth + 1) * -NODE_SPACING}
-					left={(depth + 1) * NODE_SPACING}
-				/>
-			)}
-		</div>
+			{node.left && <BinaryNode node={node.left} depth={depth + 1} left offset={offset} />}
+			{node.right && <BinaryNode node={node.right} depth={depth + 1} right offset={offset} />}
+		</>
 	);
 };
 
 const BinaryTree = ({ root }) => {
 	return (
-		<div className="page binarytree">
-			<div className="node-container">{root.value && <BinaryNode node={root} depth={0} />}</div>
+		<div className='page binarytree'>
+			{root.value && <BinaryNode node={root} depth={0} offset={50} />}
 		</div>
 	);
 };
