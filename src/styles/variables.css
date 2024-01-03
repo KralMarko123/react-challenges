@@ -2,7 +2,7 @@
 
 :root {
 	--main-dark: #2c302e;
-	--main-light: #ddd8c4;
+	--main-light: rgb(221, 216, 196);
 	--success: #8ed081;
 	--danger: #ff331f;
 	--accent: #bb7e8c;

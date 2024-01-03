@@ -129,7 +129,7 @@ export const binaryTreeData = {
 			left: { value: 10 },
 		},
 		right: {
-			value: 4,
+			value: 90,
 			left: {
 				value: 5,
 			},
@@ -139,3 +139,6 @@ export const binaryTreeData = {
 		},
 	},
 };
+
+
+export const correctPasscode = '1234'

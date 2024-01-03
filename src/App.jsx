@@ -1,16 +1,22 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { ROUTES } from "./constants/ROUTES";
-import CountryCapitalGame from "./components/CountryCapitalGame/CountryCapitalGame";
-import Home from "./components/Home/Home";
-import WhacAMole from "./components/WhacAMole/WhacAMole";
-import { binaryTreeData, countryCapitalData, fileViewerData } from "./data/COMPONENT_DATA";
-import MemoryCardGame from "./components/MemoryCardGame/MemoryCardGame";
-import FileViewer from "./components/FileViewer/FileViewer";
-import QueueCounters from "./components/QueueCounters/QueueCounters";
-import SynonymFinder from "./components/SynonymFinder/SynonymFinder";
-import DotCreator from "./components/DotCreator/DotCreator";
-import BinaryTree from "./components/BinaryTree/BinaryTree";
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ROUTES } from './constants/ROUTES';
+import CountryCapitalGame from './components/CountryCapitalGame/CountryCapitalGame';
+import Home from './components/Home/Home';
+import WhacAMole from './components/WhacAMole/WhacAMole';
+import {
+	binaryTreeData,
+	correctPasscode,
+	countryCapitalData,
+	fileViewerData
+} from './data/COMPONENT_DATA';
+import MemoryCardGame from './components/MemoryCardGame/MemoryCardGame';
+import FileViewer from './components/FileViewer/FileViewer';
+import QueueCounters from './components/QueueCounters/QueueCounters';
+import SynonymFinder from './components/SynonymFinder/SynonymFinder';
+import DotCreator from './components/DotCreator/DotCreator';
+import BinaryTree from './components/BinaryTree/BinaryTree';
+import Passcode from './components/Passcode/Passcode';
 
 const App = () => {
 	return (
@@ -28,6 +34,7 @@ const App = () => {
 				<Route path={ROUTES.SYNONYMFINDER} element={<SynonymFinder />} />
 				<Route path={ROUTES.DOTCREATOR} element={<DotCreator />} />
 				<Route path={ROUTES.BINARYtREE} element={<BinaryTree root={binaryTreeData} />} />
+				<Route path={ROUTES.PASSCODE} element={<Passcode passcode={correctPasscode} />} />
 			</Routes>
 		</BrowserRouter>
 	);
