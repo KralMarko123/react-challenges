@@ -6,9 +6,18 @@ import queueCountersThumbnail from '../assets/images/queueCounters/queue counter
 import synonymFinderThumbnail from '../assets/images/synonymFinder/synonym finder thumbnail.png';
 import dotCreatorThumbnail from '../assets/images/dotCreator/dot creator thumbnail.png';
 import passcodeThumbnail from '../assets/images/passcode/passcode thumbnail.png';
+import todoThumbnail from '../assets/images/todoApp/todo thumbnail.png';
 import { ROUTES } from './ROUTES';
 
 export const CHALLENGES = [
+	{
+		title: 'ToDo + Google Sheets',
+		description:
+			'A todo application using google sheets as the backend. You can add, remove and update items you have in your todo list with ease',
+		thumbnail: todoThumbnail,
+		thumbnailAlt: 'todo-app-google',
+		link: 'https://kralmarko123.github.io/todo-app/'
+	},
 	{
 		title: 'Countries & Capitals',
 		description:
