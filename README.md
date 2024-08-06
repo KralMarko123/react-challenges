@@ -10,6 +10,10 @@
 
 The following list contains a brief description of each challenge and what concept might have been used to make it work. Each title leads to the component corresponding to the challenge.
 
+- ### [ToDo App + Google Sheets](https://github.com/KralMarko123/todo-app)
+
+  - A simple todo app with google sheets paired as the backend. I had to figure out App Scripts and how their API worked in order for me to process each request sent from the react app, but got the job done in the end.
+
 - ### [Country Capital Game](./src/components/CountryCapitalGame/CountryCapitalGame.jsx)
 
   - A country/capital guessing game. Each value is rendered as a button which can be clicked. Guessing each pair correctly removes them until a success message pops up. Buttons are colored appropriately depending on their state.
